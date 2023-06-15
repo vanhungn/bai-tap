@@ -107,7 +107,7 @@ const myArr = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo'];
                         {
                             count++;
                             
-                             
+                              
                         } 
                     }
                     
@@ -115,13 +115,55 @@ const myArr = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo'];
                     //  console.log(result);
                     
                     pushmyFuncti.push(inputArr[i]+":"+count);
-                    //  console.log(pushmyFuncti)
-                     let setResult=new Set(pushmyFuncti);
-                     console.log(setResult);
+                   
                 }
-               
+                let setResult=new Set(pushmyFuncti);
+                     console.log(setResult);
 			}
 			console.log(myFuncti(myArr));
-            const myArr1 = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo'];
-            const duma=new Set(myArr1);
-            console.log(duma)
+            //bai 8
+            const arr11 = [{ make: 'audi', model: 'r8', year: '2012' }, 
+            { make: 'audi', model: 'rs5', year: '2013' },
+            { make: 'ford', model: 'mustang', year: '2012' },
+             { make: 'ford', model: 'fusion', year: '2015' }, 
+             { make: 'kia', model: 'optima', year: '2012' }];
+             function objectOfTheArray(name,avh){
+                for(let i=0;i<avh.length;i++)
+                {
+                    if(name===avh[i].make)
+                    {
+                        console.log(avh[i].make,":",avh[i]);
+                    }
+                }
+             }
+             objectOfTheArray("kia",arr11);
+ 
+//bai 9
+const order = {
+    'cart': [
+        { id: 1, name: "ao dai", amount: 5, price: 100000 },
+        { id: 2, name: "ao coc", amount: 2, price: 200000 },
+        { id: 3, name: "quan dai", amount: 3, price: 150000 },
+        { id: 4, name: "quan coc", amount: 4, price: 130000 },
+    ],
+    'customer': 'Name',
+    'address': '12 Giai Phong Street'
+};
+let sumAmount=0;
+let sumPrice=0;
+let reduceMethod=(man)=>{
+     for(let i in man)
+     {
+        if(typeof man[i]==="object")
+        {
+            for( let j in man[i])
+            {
+                sumAmount+=man[i][j].amount;
+                sumPrice+=man[i][j].price;
+            }
+        }
+     }
+     console.log(sumAmount);
+     console.log(sumPrice);
+}
+console.log(reduceMethod(order));
