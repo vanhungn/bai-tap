@@ -114,11 +114,10 @@ const myArr = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo'];
                     //  const result=inputArr[i]+":"+count;
                     //  console.log(result);
                     
-                    pushmyFuncti.push(inputArr[i]+":"+count);
+                    pushmyFuncti.push(inputArr[i]+":"+count);   
                    
-                }
-                let setResult=new Set(pushmyFuncti);
-                     console.log(setResult);
+                }const myArr1 = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo'];
+
 			}
 			console.log(myFuncti(myArr));
             //bai 8
