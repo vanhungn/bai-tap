@@ -166,3 +166,80 @@ let reduceMethod=(man)=>{
      console.log(sumPrice);
 }
 console.log(reduceMethod(order));
+//bai10
+const products=[
+    {
+        name:"florentino",
+        old:20,
+        address:"Ha Noi",
+        price:3000,
+    },
+    {
+        name:"zuka",
+        old:24,
+        address:"Da Nang",
+        price:2000,
+    },
+    {
+        name:"violet",
+        old:26,
+        address:"Ho Chi Minh",
+        price:6000,
+    },
+    {
+        name:"grack",
+        old:20,
+        address:"Da Lat",
+        price:2000,
+    }
+];
+const myMap=(value)=>{
+    return value.map(child=>{
+        const {name,old,address}=child;
+        return {
+            information: name,old,address
+        };
+    });
+};
+console.log(myMap(products))
+const myReduce=(value)=>{
+    return value.reduce((child,item)=>{
+        return child+item.price;
+    },0);
+};
+console.log(myReduce(products));
+
+const myFilter=(item)=>{
+    return item.filter(child=>child.price>3000)
+}
+console.log(myFilter(products));
+//baif 11
+const deps = {
+    'data01':[1,2,3,[12,323]],
+    'data02':[5,8,12],
+    'data03':[5,14,79],
+    'data04':[3,64,105],
+}
+function magedeps(viu){
+    let pushDep=[];
+    for(let i in viu)
+    {
+        for(let j of viu[i])
+        {
+            if(Array.isArray(j)===true)
+            {
+               const read= viu[i].flat();
+               pushDep.push(read);      
+            }
+            else if(!pushDep.includes(viu[i])){
+                pushDep.push(viu[i]);
+
+            }
+        }
+    }
+   const tobo= pushDep.slice(1);
+   const toboFlat=tobo.flat()  ; 
+   const toboSet= new Set(toboFlat)  ;  
+   console.log(toboSet);
+}
+magedeps(deps);
