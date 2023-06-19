@@ -1,0 +1,47 @@
+
+.App {
+  display:flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100vh;
+  margin:0 auto;
+  position: relative;
+}
+
+
+
+
+.input{
+  width:100%;
+  height:50px;
+  border:1px solid #fff ;
+  border-bottom:1px solid black;
+}
+
+.element{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  align-self: flex-start;
+ 
+}
+.text{
+  padding-left:30px ;
+  font-size:20px;
+  color:grey;
+  font-weight: 400;
+}
+::placeholder{
+  font-size: 30px;
+}
+.footer{
+  color:grey;
+  font-weight: 400;
+  font-size: 20px;
+  width:100%;
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  justify-content:space-between ;
+}
