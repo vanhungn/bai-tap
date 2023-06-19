@@ -1,2 +1,2 @@
-Đã hoàn thành bài Lesson1 tập được giao,
-xin anh góp ý và chỉ dẫn ạ.
+Đã hoàn thành bài Lesson1 được giao,
+Đã hoàn thành bài Lesson2 được giao.
