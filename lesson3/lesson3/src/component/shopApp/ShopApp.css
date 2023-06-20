@@ -1,0 +1,9 @@
+.h1ShopApp{
+    text-align: center;
+    font-size: 60px;
+    font-family: 700;
+}
+.svgShopApp{
+    position: absolute;
+    right:40%;
+}
