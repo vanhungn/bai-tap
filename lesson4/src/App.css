@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.availableButton{
+  width: 90px;
+  height:25px;
+  padding:5px;
+  margin:5px;
+  margin-bottom: 0px;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 10px;
+  background-color: #00A711;
+}
+.shoe{
+
+  padding: 10px;
+  padding-bottom: 5px;;
+  border: 1px solid #B4B1B1;
+  border-radius: 10px;
+  width: 305px;
+ 
+  
+}
+.lowerBody{
+  padding:15px 15px 0 15px;
+  margin-bottom: 0px;
+}

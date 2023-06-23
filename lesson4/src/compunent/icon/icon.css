@@ -1,0 +1,11 @@
+.Evaluate{
+    margin: 5px 0;
+    
+    display:flex;
+    justify-content: space-between;
+}
+h4{
+    margin: 0;
+    padding-right: 15px;
+    color:#D70000;
+}
