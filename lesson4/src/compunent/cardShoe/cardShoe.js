@@ -1,5 +1,6 @@
 import { StartIcon } from "../icon/icon";
 import { PriceShoe } from "../priceShoe/priceShoe";
+import "./cardShoe.css"
 const Shoe=()=>{
     return(
         <div className="shoe">
