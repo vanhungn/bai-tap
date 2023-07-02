@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.productList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  flex-wrap: wrap;
+  gap :30px;
+}
