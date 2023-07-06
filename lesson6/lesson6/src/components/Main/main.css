@@ -1,0 +1,16 @@
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+}
+.bodyMain{
+    margin-top: 40px;
+    background-color: black;
+    border: 1px solid black;
+    height: auto;
+
+}
+.select{
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
