@@ -1,0 +1,41 @@
+.header{
+    margin-bottom: 50px;
+    padding: 25px;
+    height:150px;
+    background-color:black ;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.cart{
+    margin-top:25px ;
+    display: flex;
+    gap: 20px;
+   
+    
+}
+.cartChild{
+    font-size: 20px;
+    color:white;
+    display: flex;
+    gap:10px;
+}
+.searchBut{
+    background-color: black;
+    padding: 5px;
+    border: 2px solid green;
+    color:green;
+    font-weight: 700;
+}
+.rearchIn{
+    width: 350px;
+    padding: 5px;
+}
+.search{
+    padding-left:60px ;
+    display: flex;
+    gap:15px;
+}

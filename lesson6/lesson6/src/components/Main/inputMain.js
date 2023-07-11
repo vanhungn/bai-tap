@@ -3,7 +3,7 @@ import { CoverTan } from "../../utils/coverTans";
 import { useState } from "react";
 export const InputMain=(prop)=>{
     const {coverMock}=prop;
-        
+    
       
 
        

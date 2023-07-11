@@ -3,6 +3,7 @@ import './App.css';
 import FakeApi from './components/fake_API/fekeAPI';
 import Header from './components/fake_API/headerCard';
 import { useState } from 'react';
+import { Mystor } from './conText/myStore';
 function App() {
   // useEffect(()=>{
   //  fetch('https://jsonplaceholder.typicode.com/posts')
@@ -11,18 +12,20 @@ function App() {
   // },[])
   const [count,setcout]=useState([]);
   return (
-    <div className="">
-        <Header
-        count={count}/>
+   < Mystor.Provider value={{
+    count,
+    setcout,
+   }}>
+   <div className="">
+        <Header/>
        <div className='container-xl productList'>
-           <FakeApi
-           setcout={setcout}
-            count={count}
-           />
+           <FakeApi />
           
         </div>
      
     </div>
+   </Mystor.Provider>
+    
   );
 }
 

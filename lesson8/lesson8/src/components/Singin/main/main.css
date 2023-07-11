@@ -1,0 +1,55 @@
+.Main{
+
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.mainSignIn{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   
+} 
+.mainInput{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgb(218, 216, 216);
+    width:100%;
+}
+.mainP{
+    margin: 0;
+    align-self: flex-start;
+}
+.buttonSignIn{
+    width:100px;
+    padding: 5px 20px;
+    background-color: black;
+    border-radius: 10px;
+    color:white;
+}
+.register{
+    width: 200px;
+    align-self: flex-start;
+    display: flex;
+    position: relative;
+
+}
+.buttonRegister{
+    border: none;
+   background-color: white;
+   position: absolute;
+   right:20px;
+   top:-2px;
+   
+
+}
+.mainBottom{
+    
+    color: rgb(182, 179, 179);
+    position: absolute;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+}

@@ -1,7 +1,8 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect, useContext } from "react";
+import { Mystor } from "../../conText/myStore";
 import { Card } from "./card";
 const FakeApi=(prop)=>{
-    const {count,setcout}=prop;
+    const myStor=useContext(Mystor)
     const [json,setjson]=useState([]);
    useEffect(()=>{
     fetch('https://64a69fd3096b3f0fcc8024d5.mockapi.io/api/products')
@@ -10,14 +11,14 @@ const FakeApi=(prop)=>{
         .catch((err)=>console.log(err))
    },[])
   const headerl=(autocard)=>{
-    if(autocard&& !count.find((item)=>item.id===autocard.id))
+    if(autocard&& !myStor.count.find((item)=>item.id===autocard.id))
     {
-        setcout([...count,autocard]);
+        myStor.setcout([...myStor.count,autocard]);
     }
   }
   const removeHeaderl=(toboss)=>{
-        const toBoss=count.filter((item)=>item.id!==toboss.id)
-        setcout(toBoss);
+        const toBoss=myStor.count.filter((item)=>item.id!==toboss.id)
+        myStor.setcout(toBoss);
   }
     return (
         json.map((child,index)=>{
