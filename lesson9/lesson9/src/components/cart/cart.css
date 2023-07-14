@@ -1,0 +1,57 @@
+.CardImg
+{
+    width: 100%;
+}
+.disCard{
+    margin-top: 50px;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+
+}
+.priceCard{
+    display: flex;
+    justify-content: space-around;
+}
+.CarcImg{
+    height: 225px;
+}
+.cardSpan{
+    background-color: rgb(236, 33, 33);
+    border-radius: 10px  0 20px 0;
+    width: 50px;
+    height: 30px;
+    position:absolute;
+    top: 0px;
+    left:0px;
+
+}
+.CardButton{
+    font-size:25px;
+    border: none;
+    color:green;
+    background-color: #DEF9EC;
+}
+.CardH6{
+    margin-top: 5px;
+    text-decoration: line-through;
+    color:#7E7E7E;
+}
+.CardIcon{
+    
+    color:rgb(231, 231, 107);
+
+}
+.CardButton_remove{
+   
+    font-size:25px;
+    border: none;
+    color:green;
+    background-color: #DEF9EC;
+}

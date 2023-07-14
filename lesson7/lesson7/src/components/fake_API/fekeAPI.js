@@ -11,7 +11,7 @@ const FakeApi=(prop)=>{
         .catch((err)=>console.log(err))
    },[])
   const headerl=(autocard)=>{
-    if(autocard&& !myStor.count.find((item)=>item.id===autocard.id))
+    if(autocard&& !myStor.count.find((item)=>item.id===autocard.id)) // !{}
     {
         myStor.setcout([...myStor.count,autocard]);
     }
